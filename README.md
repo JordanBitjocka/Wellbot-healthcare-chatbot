@@ -36,7 +36,16 @@ The project demonstrates data loading with pandas, label encoding, train/test sp
 
 
 
-## Run locally
+## Portfolio website
+
+The `docs/` folder contains my personal portfolio website (plain HTML/CSS/JS).
+It is published with GitHub Pages and lives at:
+
+**https://jordanbitjocka.github.io/Wellbot-healthcare-chatbot/**
+
+To publish it, go to **Settings → Pages**, choose *Deploy from a branch*,
+select the default branch and the `/docs` folder.
+
 
 
 
@@ -79,6 +88,8 @@ Data/                  Training, testing, description, precaution, severity data
 ui/                    Browser chat interface
 
 Static/ Template/ js/  Original Flask interface assets
+
+docs/                  Portfolio website (GitHub Pages)
 
 ```
 
