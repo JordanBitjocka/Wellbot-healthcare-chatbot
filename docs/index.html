@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jordan Bitjocka IV — Python &amp; Machine Learning Developer</title>
+  <meta name="description" content="Portfolio of Jordan Bitjocka IV, Python & Machine Learning developer. Creator of WellBot, a healthcare symptom-guidance chatbot." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a href="#top" class="nav-logo">JB<span>IV</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-outline nav-cta" href="https://github.com/JordanBitjocka" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="container hero-inner reveal">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>Jordan Bitjocka IV</h1>
+      <h2 class="hero-role">Python &amp; Machine Learning Developer</h2>
+      <p class="hero-blurb">
+        I build machine-learning applications end to end — from data pipelines and
+        model training to REST APIs and browser interfaces. Creator of
+        <strong>WellBot</strong>, a healthcare symptom-guidance chatbot.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View my work</a>
+        <a class="btn btn-ghost" href="https://github.com/JordanBitjocka" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+          Follow on GitHub
+        </a>
+      </div>
+      <ul class="hero-meta">
+        <li>📍 Douala, Cameroon</li>
+        <li>🧠 Machine Learning</li>
+        <li>🛠️ Flask REST APIs</li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <p class="eyebrow reveal">About me</p>
+        <h2 class="section-title reveal">Curious builder, hands-on learner</h2>
+        <div class="about-grid">
+          <p class="reveal">
+            I'm a developer who enjoys turning datasets into working products. My work
+            spans the full stack of a machine-learning project: cleaning and encoding
+            data, training and serving models, and building the web interfaces that
+            make them usable. My flagship project, <strong>WellBot</strong>, began as an
+            end-of-year project and grew into a complete system — classifier, REST API
+            and chat UI.
+          </p>
+          <p class="reveal">
+            I care about building things <em>responsibly</em>: WellBot clearly
+            communicates that it is an educational prototype, not a medical device —
+            because software should be honest about what it can and cannot do.
+            I'm currently looking for opportunities to learn, contribute and grow as a
+            Python developer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow reveal">Featured project</p>
+        <h2 class="section-title reveal">WellBot — Healthcare Chatbot</h2>
+
+        <article class="project-card reveal">
+          <div class="project-head">
+            <div class="project-icon" aria-hidden="true">🩺</div>
+            <div>
+              <h3>WellBot · Symptom Guidance Prototype</h3>
+              <p class="project-sub">Machine learning · Flask API · Browser chat interface</p>
+            </div>
+            <a class="btn btn-primary project-link" href="https://github.com/JordanBitjocka/Wellbot-healthcare-chatbot" target="_blank" rel="noopener">View repository →</a>
+          </div>
+
+          <p class="project-desc">
+            WellBot accepts a list of symptoms, predicts the most likely condition with a
+            scikit-learn Decision Tree classifier, and returns the condition description,
+            precautions and symptom severity through a Flask REST API — all wrapped in a
+            lightweight JavaScript chat interface.
+          </p>
+
+          <ul class="stats">
+            <li><strong data-count="132">0</strong><span>Symptoms encoded</span></li>
+            <li><strong data-count="41">0</strong><span>Conditions classified</span></li>
+            <li><strong data-count="4920" data-format="k">0</strong><span>Training records</span></li>
+            <li><strong data-count="4">0</strong><span>REST endpoints</span></li>
+          </ul>
+
+          <div class="project-detail">
+            <h4>What it demonstrates</h4>
+            <ul>
+              <li>Data pipeline with <strong>pandas</strong>: loading, label encoding, train/test splitting</li>
+              <li>Model training &amp; probability output with <strong>scikit-learn</strong> (Decision Tree)</li>
+              <li>CSV-backed lookup of descriptions, precautions and severity values</li>
+              <li><strong>Flask</strong> REST endpoints with CORS configured for a browser client</li>
+              <li>HTML/CSS/JavaScript chat UI (Bootstrap)</li>
+              <li>Responsible ML: clear disclaimers — educational prototype, not a medical device</li>
+            </ul>
+          </div>
+
+          <ul class="tags">
+            <li>Python</li><li>scikit-learn</li><li>pandas</li><li>NumPy</li>
+            <li>Flask</li><li>REST API</li><li>JavaScript</li><li>HTML/CSS</li><li>Bootstrap</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="eyebrow reveal">Skills</p>
+        <h2 class="section-title reveal">Tools I work with</h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>🐍 Languages</h3>
+            <ul class="tags"><li>Python</li><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>🤖 Machine Learning</h3>
+            <ul class="tags"><li>scikit-learn</li><li>pandas</li><li>NumPy</li><li>Classification</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>🌐 Web &amp; APIs</h3>
+            <ul class="tags"><li>Flask</li><li>REST APIs</li><li>CORS</li><li>Bootstrap</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3>🔧 Workflow</h3>
+            <ul class="tags"><li>Git</li><li>GitHub</li><li>CSV data handling</li><li>Documentation</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container contact-inner reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 class="section-title">Let's build something</h2>
+        <p class="contact-blurb">
+          The fastest way to reach me is through GitHub — check out my code,
+          open an issue, or start a discussion.
+        </p>
+        <div class="hero-actions center">
+          <a class="btn btn-primary" href="https://github.com/JordanBitjocka" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            github.com/JordanBitjocka
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Jordan Bitjocka IV · Built with plain HTML, CSS &amp; JavaScript</p>
+      <p class="footer-note">WellBot is an educational prototype and does not provide medical advice.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
